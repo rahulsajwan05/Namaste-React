@@ -1,0 +1,36 @@
+Props -- normal argument to function , passing a prop to a component means passing argument to function component
+        ** use **
+            when you pass some dynamic data to an component you pass through props
+
+config driven UI --
+    how the UI should look like using  data ( config ) and config comes from backend
+
+-- React itself says dont use index as keys
+
+--Two types of export and import 
+    * Default export/import
+        export Default <component name>
+        import <component name> from <path>
+    
+    *Named export import
+        export const <component name>
+        import { <component name> } from <path>  
+-- React is good at DOm operation so it is fast
+--Hooks     
+    normal js function which is given by react but that fucntion has some logic in behind (Normal js utility fucntion). which has their
+    own specific use case
+    *useState() - superpowerful state variable use to create state variable , why it is superfast beacue react constantly monitoring the variable   
+        and when we update something on lcikc or any other event then it call the call variable which is set 
+        then the dif algorithm will run find the difference between birtual DOM and the update the UI. becaue dif algorithm
+        keeps the UI and data layer in sync
+    *useEffect() - 
+---
+
+--react use reaconxilition algorithm behind the scene ( react Fibre )
+
+    Virtual DOm - Representation of actual DOm, it is an object Representation of DOm and react is fast because object
+        difference in much faster as compared to HTML so we compare do object and then if they find any differnnce
+        then the actual updated the DOM.  
+    actual DOM - which we see in DOM
+
+-- DIf algorithm find rthe difference between the virtual DOm and update virtual DOM

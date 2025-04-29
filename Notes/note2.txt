@@ -1,0 +1,35 @@
+what is npm - 
+        manages the packages -- all the libraries is in npm everything is hosted on npm
+
+What is package.json
+        configuration for npm , keep track of version dependency
+
+What is bundler( webpacks, parcer)
+    when whole code need to be minify , clean to ship to production
+
+What is dev-dependency and dependency
+    need for dev-dependency and some need for production dependency
+
+What is carat and tilde
+    carat - The ^15.0.0 means:
+    Install any version >=15.0.0 and <16.0.0.
+    It allows updating minor and patch versions, but not major.
+    Example: Matches 15.0.0, 15.1.2, 15.9.9, but not 16.0.0.
+
+    tidle-
+    Allows only patch updates within the same minor version.
+    Example: Matches 15.0.0, 15.0.1, 15.0.9, but not 15.1.0.
+
+    "dependencies": {
+        "@angular/core": "^15.0.0", // updates to any 15.x.x version
+        "rxjs": "~7.5.0"            // updates only within 7.5.x
+    }
+
+what is package-lock.json
+    keep track of exact version that is being installed, basically its lock the version and keep the record
+    of every dependency/version.
+
+What is node_modules
+    contains all the code that we fetch from npm, when we install any dependency it install code of that 
+    dependency and that code/library has own dependency and those dependency have other dependency and goes 
+    like that - this is known as transative dependency

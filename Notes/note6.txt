@@ -1,0 +1,21 @@
+Monolith and micro-services
+    -- monolith - 
+
+
+--useEffect() has two parameter -
+    callback - as soon as the render cycle is completer means complete is render then it will call the callback fucntion 
+        ex-  i use the useEffect in fucntional component (body) and whatevery the data or UI is present in that component
+        that will render first then callback will execute.
+
+        * so if you have to do something as soon as the rendering finiesh then use useEffect
+
+-- instead of loader we use shimmer UI  
+    load an fake page until we get data from API by shimmer UI
+
+--why do we need state variable
+    suppose we have a button login and on click or after login i want to change the name of that button from login to logout
+    then even if we add event click handler then update the btnname variable still it wont update because DOM didnt detect
+    any chnage. so useState comes into the picture when we chnage soemthing
+    *it will re-render the whole header component if we have login in header * 
+
+--  

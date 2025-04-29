@@ -1,0 +1,67 @@
+--JSX - Is not HTML in js, It looks like HTMl or XML syntax  ( jsx is create. createElement)
+
+    * This is how you create react element using core- react 
+        const heading = React.createElement('h1', 
+        { id: 'heading'},
+        'Hello from React!'
+        );\
+    
+   *  This is how you create React element using JSX
+        const jsxHeading = <h1 id="heading"> Namster js </h1>
+
+    * they both return object
+
+
+
+--babel convert jsx into react.createElement and react element is object and render take object as an argument 
+     To convert object into DOM
+
+-- React has 2 types of component - everything in react is component like heading input tag etc
+    1. Functional component
+        is a normal js function which return a some jsx element or a function that return a jsx code
+       a. Functional componsition
+        when we add other Functional component into 2nd or another
+       
+        eg- 
+        const Title = () => (
+        <h1 id="heading" className="head" tabIndex="5">
+            Namster js
+        </h1>
+        );
+
+        const HeadingComponent = () => {
+            <div id="container">
+                <Title />
+                <h1 className="heading">Namaster js functional component</h1>
+            </div>
+        }
+
+    2. class based
+
+
+
+
+    ----------------------------------------------
+
+    import React from "react";
+import ReactDOM from "react-dom/client";
+
+//React element
+const Title = () => (
+  <h1 id="heading" className="head" tabIndex="5">
+    Namster js
+  </h1>
+);
+
+const HeadingComponent = () => (
+    <div id="container">
+        <Title />
+        <h1 className="heading">Namaster js functional component</h1>
+    </div>
+
+)
+
+ 
+//React Component
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<HeadingComponent/>);

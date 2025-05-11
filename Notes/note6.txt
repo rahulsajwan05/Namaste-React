@@ -8,14 +8,24 @@ Monolith and micro-services
         that will render first then callback will execute.
 
         * so if you have to do something as soon as the rendering finiesh then use useEffect
+    IMP 
+        * if no dependency array => its called on every render
+        * if dependency array is empty => called on only intial render just ones
+        * if we have something in dependency array [btnNameReact] => only called if the dependency changes
+          means everytime btnNameReact name changes, useEffect will be called
+
+    ***** when the useEffect called ***********
+        this call after render of component. and dependency array chnages the behaviour
 
 -- instead of loader we use shimmer UI  
     load an fake page until we get data from API by shimmer UI
 
---why do we need state variable
+--why do we need state variable (useState)
     suppose we have a button login and on click or after login i want to change the name of that button from login to logout
     then even if we add event click handler then update the btnname variable still it wont update because DOM didnt detect
     any chnage. so useState comes into the picture when we chnage soemthing
     *it will re-render the whole header component if we have login in header * 
 
+    ** use to create localstate variable inside functional component
+    ** 
 --  

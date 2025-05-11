@@ -1,0 +1,20 @@
+For error - we have useRouteError Hooks
+
+
+for routing --
+        import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+        createBrowserRouter -- take config like path and element and element Error if we have to show error page
+        RouterProvider -- provide a route to pages
+                           root.render(<RouterProvider router={router} />);
+        
+        * children Route
+            <Outlet/> helps to rednder the comp dynamically on the basis of route
+        * Link work same as anchor tag (HREF) but it reloads the whole page 
+         and link does not 
+
+         TYPES OF routing
+            client side routing - without making any network call all data in client
+            Server Side routing - making a client make network call and return the page
+        
+        

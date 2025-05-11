@@ -1,0 +1,22 @@
+Class based function 
+    it is a class which has a render and extend React.component method which return the piece of jsx
+    
+
+State Variable 
+    useing hooks useState()
+
+    in class based-- it is created when a class instance in created for state variable best place is contructor, because
+    whenever i am created an new instance of class contructor gets called
+
+How does react component work behind the scene
+whenever make a instace of class
+  --firt constructor called then render
+
+  componentDidMount() use of it 
+       --  api call first render the comp then call an api call
+
+
+React lifecyle 
+  -- mounting face 
+        render phase
+        commit phase

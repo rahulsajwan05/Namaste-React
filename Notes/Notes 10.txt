@@ -1,0 +1,4 @@
+Higher Order Comp- 
+  --- used to enhacne the UI
+ ---  It is a function that takes a component and return a component
+ --- It is a pure fucntion 

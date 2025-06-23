@@ -1,15 +1,24 @@
 import { LOGO_URL } from "../utils/constant";
-import { useState, useEffect } from "react";
+import { useState, useEffect , useContext} from "react";
 import { Link } from "react-router-dom";
+import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
 
+    const {loggedInUser} = useContext(UserContext)
    const [btnNameReact, setBtnNameReact] = useState("Login");
+
+     // useSelector is a hook in react-redux that allows you to extract data from the Redux store.
+  // subscribe to the store using selector
+  const cartItems = useSelector((store)=>store.cart.cartItems)
+    console.log(cartItems)
 
   //  * if no dependency array => its called on every render
   //  * if dependency array is empty => called on only intial render just ones
   //  *if we have something in dependency array [btnNameReact] => only called if the dependency changes
   //  means everytime btnNameReact name changes, useEffect will be called
+
 
    useEffect(()=>{
     console.log("useEffect called");
@@ -33,12 +42,15 @@ const Header = () => {
             <li className="px-4">
               <Link to="/contact">Contact</Link>
             </li>
-            <li className="px-4">Cart</li>
+            <li className="px-4 text-lg font-bold">            
+              <Link to="/cart">Cart - {cartItems.length}</Link>
+            </li>
             <button className="login-btn" 
             onClick={()=>{
              btnNameReact==="Login" ? setBtnNameReact("Logout") : setBtnNameReact("Login");
             }}>{btnNameReact}</button>
           </ul>
+          <li className="px-4">{loggedInUser}</li>
         </div>
       </div>
     )

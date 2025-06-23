@@ -21,6 +21,18 @@ const RestaurantCard = (props) => {
     );
   };
 
+  export const withHigherRating = (RestaurantCard) =>{
+      return(props)=>{
+        return (
+          <div>
+            <label className="absolute bg-black text-white rounded-lg p-1" >promoted</label>
+            <RestaurantCard {...props}/>
+          </div>
+        )
+      }
+  }
+
+
  
 
   export default RestaurantCard;

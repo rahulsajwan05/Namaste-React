@@ -1,0 +1,19 @@
+REDUX
+---- it is a different library use for big application
+  --- offer manage state
+  
+REDUX TOOLKIT
+write
+  --- click on add button dispatch an action and call the function (reducer )and fucntion modify the cart ( REDUCER IS FUNCTION)
+read
+  --- 
+  subcribe using a selector
+
+
+selector -- hook in react 
+
+REDUCERS 
+   --- combination of small reducer
+  
+REDUCER
+---  combination of slices

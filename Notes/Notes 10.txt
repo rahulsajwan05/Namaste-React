@@ -1,4 +1,20 @@
 Higher Order Comp- 
   --- used to enhacne the UI
  ---  It is a function that takes a component and return a component
- --- It is a pure fucntion 
+ ---  It is a pure fucntion 
+
+
+Control and uncontrol
+   --- 
+   
+
+React context 
+   -- there is some data which we need anywhere in an app can be access anywhere for that data we hold inside context and that
+   context can be used anywhere in app like theme dark or light
+
+  usercontext. provider
+     to change the value in whole application
+
+
+ props drilling
+    -- 

@@ -14,7 +14,7 @@ import appStore from "./utils/appStore";
 import Cart from "./components/Cart";
 const AppLayout = () => {
 
-  const [userName, setUserName] = useState();
+  const [userName, setUserName] = useState("");
   useEffect(()=>{
     const dummy ={
       name: 'Dummy Data'

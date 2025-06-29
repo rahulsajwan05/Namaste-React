@@ -12,7 +12,7 @@ const Header = () => {
      // useSelector is a hook in react-redux that allows you to extract data from the Redux store.
   // subscribe to the store using selector
   const cartItems = useSelector((store)=>store.cart.cartItems)
-    console.log(cartItems)
+    // console.log(cartItems)
 
   //  * if no dependency array => its called on every render
   //  * if dependency array is empty => called on only intial render just ones

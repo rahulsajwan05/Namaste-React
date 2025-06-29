@@ -86,7 +86,7 @@ const Body = () => {
 
           <div className="search m-4 p-4 flex items-center">
            <input type="text" className="p-2 border border-black " 
-           value={loggedInUser}
+           value={loggedInUser ?? ""}
             onChange={(e)=>setUserName(e.target.value)}/>
           </div>
 
